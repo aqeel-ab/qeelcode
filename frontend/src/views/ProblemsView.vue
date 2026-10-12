@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 
 interface Problem {
     slug: string
@@ -18,6 +18,17 @@ interface Problem {
 const problems = ref<Problem[]>([])
 const loading = ref(true)
 const error = ref('')
+const selectedDifficulty = ref('All')
+
+const filteredProblems = computed(() => {
+  if (selectedDifficulty.value === 'All') {
+    return problems.value
+  }
+
+  return problems.value.filter(
+    (problem) => problem.difficulty === selectedDifficulty.value,
+  )
+})
 
 onMounted(async () => {
   try {
@@ -58,10 +69,37 @@ onMounted(async () => {
     </div>
 
     <div class="filters">
-      <button class="filter active">All</button>
-      <button class="filter">Easy</button>
-      <button class="filter">Medium</button>
-      <button class="filter">Hard</button>
+        <button
+            class="filter"
+            :class="{ active: selectedDifficulty === 'All' }"
+            @click="selectedDifficulty = 'All'"
+        >
+        All
+        </button>
+
+        <button
+            class="filter"
+            :class="{ active: selectedDifficulty === 'Easy' }"
+            @click="selectedDifficulty = 'Easy'"
+        >
+            Easy
+        </button>
+
+        <button
+            class="filter"
+            :class="{ active: selectedDifficulty === 'Medium' }"
+            @click="selectedDifficulty = 'Medium'"
+        >
+            Medium
+        </button>
+
+        <button
+            class="filter"
+            :class="{ active: selectedDifficulty === 'Hard' }"
+            @click="selectedDifficulty = 'Hard'"
+        >
+            Hard
+        </button>
     </div>
 
     <div v-if="loading" class="loading">
@@ -74,7 +112,7 @@ onMounted(async () => {
 
     <div v-else class="problem-list">
       <RouterLink
-        v-for="problem in problems"
+        v-for="problem in filteredProblems"
         :key="problem.number"
         :to="`/problems/${problem.slug}`"
         class="problem-card"
