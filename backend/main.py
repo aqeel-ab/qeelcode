@@ -42,3 +42,12 @@ def get_problem(slug: str):
         **problem,
         "solution": solution,
     }
+@app.get("/api/problems")
+def get_problems():
+    return [
+        {
+            "slug": slug,
+            **problem,
+        }
+        for slug, problem in PROBLEMS.items()
+    ]

@@ -1,3 +1,43 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+
+interface Problem {
+    slug: string
+    number: number
+    title: string
+    difficulty: 'Easy' | 'Medium' | 'Hard'
+    description: string
+    patterns: string[]
+    time_complexity: string
+    space_complexity: string
+    tests_passed: number
+    total_tests: number
+    solution_file: string
+}
+
+const problems = ref<Problem[]>([])
+const loading = ref(true)
+const error = ref('')
+
+onMounted(async () => {
+  try {
+    const response = await fetch(
+      'http://127.0.0.1:8000/api/problems',
+    )
+
+    if (!response.ok) {
+      throw new Error('Failed to load problems')
+    }
+
+    problems.value = await response.json()
+  } catch (err) {
+    error.value = 'Unable to load problems.'
+  } finally {
+    loading.value = false
+  }
+})
+</script>
+
 <template>
   <section class="problems-page">
     <div class="page-header">
@@ -24,47 +64,39 @@
       <button class="filter">Hard</button>
     </div>
 
-    <div class="problem-list">
-      <RouterLink to="/problems/two-sum" class="problem-card">
-        <div class="problem-number">01</div>
+    <div v-if="loading" class="loading">
+      Loading problems...
+    </div>
+
+    <div v-else-if="error" class="error">
+      {{ error }}
+    </div>
+
+    <div v-else class="problem-list">
+      <RouterLink
+        v-for="problem in problems"
+        :key="problem.number"
+        :to="`/problems/${problem.slug}`"
+        class="problem-card"
+      >
+        <div class="problem-number">{{ problem.number }}</div>
 
         <div class="problem-content">
           <div class="problem-title-row">
-            <h2>Two Sum</h2>
-            <span class="difficulty easy">Easy</span>
+            <h2>{{ problem.title }}</h2>
+            <span :class="`difficulty ${problem.difficulty.toLowerCase()}`">
+              {{ problem.difficulty }}
+            </span>
           </div>
 
           <p>
-            Find two numbers in an array that add up to a given target.
+            {{ problem.description }}
           </p>
 
           <div class="tags">
-            <span>Array</span>
-            <span>Hash Map</span>
-          </div>
-        </div>
-
-        <div class="problem-status">
-          <span class="completed">✓ Completed</span>
-        </div>
-      </RouterLink>
-
-      <RouterLink to="/problems/add-two-numbers" class="problem-card">
-        <div class="problem-number">02</div>
-
-        <div class="problem-content">
-          <div class="problem-title-row">
-            <h2>Add Two Numbers</h2>
-            <span class="difficulty medium">Medium</span>
-          </div>
-
-          <p>
-            Add two numbers represented by linked lists and return the result.
-          </p>
-
-          <div class="tags">
-            <span>Linked List</span>
-            <span>Math</span>
+            <span v-for="pattern in problem.patterns" :key="pattern">
+              {{ pattern }}
+            </span>
           </div>
         </div>
 
