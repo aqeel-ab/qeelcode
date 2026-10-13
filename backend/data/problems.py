@@ -38,4 +38,27 @@ PROBLEMS = {
         "total_tests": 3,
         "solution_file": "add_two_numbers.py",
     },
+    
+    "longest-substring": {
+        "number": 3,
+        "title": "Longest Substring Without Repeating Characters",
+        "difficulty": "Medium",
+        "description": (
+            "Given a string, find the length of the longest "
+            "substring without repeating characters."
+        ),
+        "approach": (
+            "Use a sliding window with two pointers and a set. "
+            "Expand the window as you iterate through the string. "
+            "When a duplicate character appears, move the left "
+            "pointer forward until the window contains unique characters."
+        ),
+        "patterns": ["String", "Sliding Window", "Hash Set"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(min(n, m))",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "longest_substring.py",
+    },
+
 }
