@@ -60,5 +60,26 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "longest_substring.py",
     },
-
+    
+    "median-two-sorted-arrays": {
+        "number": 4,
+        "title": "Median of Two Sorted Arrays",
+        "difficulty": "Hard",
+        "description": (
+            "Given two sorted arrays, find the median of the "
+            "two sorted arrays."
+        ),
+        "approach": (
+            "Use binary search on the smaller array to find a "
+            "partition where all elements on the left are less "
+            "than or equal to all elements on the right."
+        ),
+        "patterns": ["Array", "Binary Search"],
+        "time_complexity": "O(log(min(m, n)))",
+        "space_complexity": "O(1)",
+        "tests_passed": 7,
+        "total_tests": 7,
+        "solution_file": "median_two_sorted_arrays.py",
+    },
+    
 }
