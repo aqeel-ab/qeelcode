@@ -187,5 +187,28 @@ PROBLEMS = {
         "total_tests": 9,
         "solution_file": "palindrome_number.py",
     },
+    
+    "regular-expression-matching": {
+        "number": 10,
+        "title": "Regular Expression Matching",
+        "difficulty": "Hard",
+        "description": (
+            "Implement regular expression matching with support for "
+            "'.' matching any single character and '*' matching zero "
+            "or more occurrences of the preceding element."
+        ),
+        "approach": (
+            "Use dynamic programming. Each state represents whether "
+            "a prefix of the string matches a prefix of the pattern. "
+            "Handle '.' as a single-character match and '*' as either "
+            "zero occurrences or one or more matching occurrences."
+        ),
+        "patterns": ["String", "Dynamic Programming"],
+        "time_complexity": "O(m * n)",
+        "space_complexity": "O(m * n)",
+        "tests_passed": 12,
+        "total_tests": 12,
+        "solution_file": "regular_expression_matching.py",
+    },
 
 }
