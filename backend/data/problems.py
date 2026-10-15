@@ -102,5 +102,24 @@ PROBLEMS = {
         "total_tests": 7,
         "solution_file": "longest_palindromic_substring.py",
     },
-
+        "zigzag-conversion": {
+        "number": 6,
+        "title": "Zigzag Conversion",
+        "difficulty": "Medium",
+        "description": (
+            "Convert a string into a zigzag pattern across a given "
+            "number of rows, then read each row from top to bottom."
+        ),
+        "approach": (
+            "Simulate the zigzag traversal by moving down through the "
+            "rows and then diagonally upward, storing characters in each "
+            "row and joining the rows at the end."
+        ),
+        "patterns": ["String", "Simulation"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(n)",
+        "tests_passed": 8,
+        "total_tests": 8,
+        "solution_file": "zigzag_conversion.py",
+    },
 }
