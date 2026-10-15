@@ -145,5 +145,27 @@ PROBLEMS = {
         "total_tests": 8,
         "solution_file": "reverse_integer.py",
     },
+    
+    "string-to-integer-atoi": {
+        "number": 8,
+        "title": "String to Integer (atoi)",
+        "difficulty": "Medium",
+        "description": (
+            "Convert a string into a 32-bit signed integer, handling "
+            "leading whitespace, an optional sign, digits, and overflow."
+        ),
+        "approach": (
+            "Skip leading whitespace, detect the optional sign, and "
+            "read digits until a non-digit character appears. Apply "
+            "the sign and clamp the result to the 32-bit integer range."
+        ),
+        "patterns": ["String", "Parsing"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 12,
+        "total_tests": 12,
+        "solution_file": "string_to_integer.py",
+    },
+
 
 }
