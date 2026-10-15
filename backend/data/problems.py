@@ -82,4 +82,25 @@ PROBLEMS = {
         "solution_file": "median_two_sorted_arrays.py",
     },
     
+    "longest-palindromic-substring": {
+        "number": 5,
+        "title": "Longest Palindromic Substring",
+        "difficulty": "Medium",
+        "description": (
+            "Given a string, find the longest substring "
+            "that reads the same forward and backward."
+        ),
+        "approach": (
+            "Expand around every possible center. Check both "
+            "odd-length and even-length palindromes, and keep "
+            "the longest palindrome found."
+        ),
+        "patterns": ["String", "Two Pointers", "Expand Around Center"],
+        "time_complexity": "O(n^2)",
+        "space_complexity": "O(n)",
+        "tests_passed": 7,
+        "total_tests": 7,
+        "solution_file": "longest_palindromic_substring.py",
+    },
+
 }
