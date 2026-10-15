@@ -166,6 +166,26 @@ PROBLEMS = {
         "total_tests": 12,
         "solution_file": "string_to_integer.py",
     },
-
+    
+    "palindrome-number": {
+        "number": 9,
+        "title": "Palindrome Number",
+        "difficulty": "Easy",
+        "description": (
+            "Given an integer x, return True if x reads the same "
+            "forward and backward, otherwise return False."
+        ),
+        "approach": (
+            "Return False for negative numbers. Reverse the digits "
+            "using modulo and integer division, then compare the "
+            "reversed number with the original number."
+        ),
+        "patterns": ["Math", "Integer Manipulation"],
+        "time_complexity": "O(d)",
+        "space_complexity": "O(1)",
+        "tests_passed": 9,
+        "total_tests": 9,
+        "solution_file": "palindrome_number.py",
+    },
 
 }
