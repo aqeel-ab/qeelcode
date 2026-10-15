@@ -122,4 +122,28 @@ PROBLEMS = {
         "total_tests": 8,
         "solution_file": "zigzag_conversion.py",
     },
+    
+    "reverse-integer": {
+        "number": 7,
+        "title": "Reverse Integer",
+        "difficulty": "Medium",
+        "description": (
+            "Given a signed 32-bit integer, reverse its digits. "
+            "Return 0 if the reversed integer falls outside the "
+            "signed 32-bit integer range."
+        ),
+        "approach": (
+            "Extract the last digit using modulo, append it to the "
+            "reversed number, and remove the last digit using "
+            "integer division. Preserve the original sign and "
+            "check for 32-bit integer overflow."
+        ),
+        "patterns": ["Math", "Integer Manipulation"],
+        "time_complexity": "O(d)",
+        "space_complexity": "O(1)",
+        "tests_passed": 8,
+        "total_tests": 8,
+        "solution_file": "reverse_integer.py",
+    },
+
 }
