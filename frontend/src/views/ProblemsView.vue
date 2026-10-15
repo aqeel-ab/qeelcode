@@ -286,8 +286,13 @@ h2 {
 }
 
 .medium {
-  background: #451a03;
+  background: #ed5e116b;
   color: #fbbf24;
+}
+
+.hard {
+  background: #8b05059a;
+  color: #df6e18;
 }
 
 .tags {
