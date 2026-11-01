@@ -210,5 +210,25 @@ PROBLEMS = {
         "total_tests": 12,
         "solution_file": "regular_expression_matching.py",
     },
-
+    "container-with-most-water": {
+        "number": 11,
+        "title": "Container With Most Water",
+        "difficulty": "Medium",
+        "description": (
+            "Given an array of heights, find two lines that together "
+            "with the x-axis form a container that holds the most water."
+        ),
+        "approach": (
+            "Use two pointers starting at both ends of the array. "
+            "Calculate the area formed by the lines at these pointers, "
+            "then move the pointer pointing to the shorter line inward. "
+            "Repeat until the pointers meet."
+        ),
+        "patterns": ["Array", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "container_with_most_water.py",
+    },
 }
