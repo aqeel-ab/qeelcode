@@ -251,4 +251,23 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "three_sum.py",
     },
+    "letter-combinations": {
+        "number": 13,
+        "title": "Letter Combinations of a Phone Number",
+        "difficulty": "Medium",
+        "description": (
+            "Given a string containing digits from 2 to 9, return "
+            "all possible letter combinations that the digits could represent."
+        ),
+        "approach": (
+            "Build combinations one digit at a time. For each existing "
+            "combination, append every letter mapped to the current digit."
+        ),
+        "patterns": ["String", "Backtracking", "Combinations"],
+        "time_complexity": "O(3^n * 4^m), where n digits map to 3 letters and m digits map to 4",
+        "space_complexity": "O(3^n * 4^m)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "letter_combinations.py",
+    },
 }
