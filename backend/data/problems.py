@@ -290,4 +290,25 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "remove_nth_node.py",
     },
+    "valid-parentheses": {
+        "number": 15,
+        "title": "Valid Parentheses",
+        "difficulty": "Easy",
+        "description": (
+            "Given a string containing brackets, determine whether "
+            "the brackets are properly opened, closed, and nested."
+        ),
+        "approach": (
+            "Use a stack to track opening brackets. For each closing "
+            "bracket, check that the stack's top contains its matching "
+            "opening bracket. The string is valid if no mismatch occurs "
+            "and the stack is empty at the end."
+        ),
+        "patterns": ["String", "Stack"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(n)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "valid_parentheses.py",
+},
 }
