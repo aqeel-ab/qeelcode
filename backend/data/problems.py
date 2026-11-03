@@ -270,4 +270,24 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "letter_combinations.py",
     },
+    "remove-nth-node-from-end": {
+        "number": 14,
+        "title": "Remove Nth Node From End of List",
+        "difficulty": "Medium",
+        "description": (
+            "Given the head of a linked list, remove the nth node "
+            "from the end of the list and return its head."
+        ),
+        "approach": (
+            "Use a dummy node and two pointers. Move the fast pointer "
+            "n + 1 steps ahead, then move both pointers until fast "
+            "reaches the end. Remove the target node after slow."
+        ),
+        "patterns": ["Linked List", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "remove_nth_node.py",
+    },
 }
