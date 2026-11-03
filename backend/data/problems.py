@@ -310,5 +310,25 @@ PROBLEMS = {
         "tests_passed": 5,
         "total_tests": 5,
         "solution_file": "valid_parentheses.py",
-},
+    },
+        "merge-two-sorted-lists": {
+        "number": 16,
+        "title": "Merge Two Sorted Lists",
+        "difficulty": "Easy",
+        "description": (
+            "Given the heads of two sorted linked lists, merge them "
+            "into one sorted linked list and return its head."
+        ),
+        "approach": (
+            "Use a dummy node and a current pointer. Compare the nodes "
+            "at the heads of both lists, attach the smaller one, and "
+            "advance that list. Finally, attach any remaining nodes."
+        ),
+        "patterns": ["Linked List", "Two Pointers"],
+        "time_complexity": "O(n + m)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "merge_two_sorted_lists.py",
+    },
 }
