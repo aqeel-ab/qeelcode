@@ -231,4 +231,24 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "container_with_most_water.py",
     },
+    "3sum": {
+        "number": 12,
+        "title": "3Sum",
+        "difficulty": "Medium",
+        "description": (
+            "Given an integer array, return all unique triplets "
+            "whose values sum to zero."
+        ),
+        "approach": (
+            "Sort the array, then fix one value and use two pointers "
+            "to find pairs that complete a sum of zero. Skip duplicate "
+            "values to avoid returning duplicate triplets."
+        ),
+        "patterns": ["Array", "Sorting", "Two Pointers"],
+        "time_complexity": "O(n^2)",
+        "space_complexity": "O(1) auxiliary space, excluding the output",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "three_sum.py",
+    },
 }
