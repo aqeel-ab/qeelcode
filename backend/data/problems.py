@@ -102,7 +102,7 @@ PROBLEMS = {
         "total_tests": 7,
         "solution_file": "longest_palindromic_substring.py",
     },
-        "zigzag-conversion": {
+    "zigzag-conversion": {
         "number": 6,
         "title": "Zigzag Conversion",
         "difficulty": "Medium",
@@ -290,8 +290,19 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "three_sum.py",
     },
-
-    
+    "3sum-closest": {
+        "number": 16,
+        "title": "3Sum Closest",
+        "difficulty": "Medium",
+        "description": "Find three integers whose sum is closest to the target.",
+        "approach": "Sort the array, then use two pointers for each fixed number.",
+        "patterns": ["Array", "Two Pointers", "Sorting"],
+        "time_complexity": "O(n²)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "three_sum_closest.py",
+    },
     "letter-combinations": {
         "number": 17,
         "title": "Letter Combinations of a Phone Number",
