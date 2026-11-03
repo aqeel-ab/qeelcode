@@ -257,6 +257,19 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "roman_to_integer.py",
     },
+    "longest-common-prefix": {
+        "number": 14,
+        "title": "Longest Common Prefix",
+        "difficulty": "Easy",
+        "description": "Find the longest common prefix shared by all strings.",
+        "approach": "Start with the first string and shorten the prefix until every string starts with it.",
+        "patterns": ["String", "Trie"],
+        "time_complexity": "O(S)",  # S is the total number of characters checked
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "longest_common_prefix.py",
+    },
     "3sum": {
         "number": 15,
         "title": "3Sum",
