@@ -231,8 +231,34 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "container_with_most_water.py",
     },
-    "3sum": {
+    "integer-to-roman": {
         "number": 12,
+        "title": "Integer to Roman",
+        "difficulty": "Medium",
+        "description": "Convert an integer to its Roman numeral representation.",
+        "approach": "Greedy: repeatedly use the largest Roman numeral value that fits.",
+        "patterns": ["Math", "Greedy"],
+        "time_complexity": "O(1)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "integer_to_roman.py",
+    },
+    "roman-to-integer": {
+        "number": 13,
+        "title": "Roman to Integer",
+        "difficulty": "Easy",
+        "description": "Convert a Roman numeral string to an integer.",
+        "approach": "Scan the symbols; subtract a value when it is smaller than the next symbol, otherwise add it.",
+        "patterns": ["Hash Map", "Math"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "roman_to_integer.py",
+    },
+    "3sum": {
+        "number": 15,
         "title": "3Sum",
         "difficulty": "Medium",
         "description": (
@@ -251,8 +277,10 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "three_sum.py",
     },
+
+    
     "letter-combinations": {
-        "number": 13,
+        "number": 17,
         "title": "Letter Combinations of a Phone Number",
         "difficulty": "Medium",
         "description": (
@@ -271,7 +299,7 @@ PROBLEMS = {
         "solution_file": "letter_combinations.py",
     },
     "remove-nth-node-from-end": {
-        "number": 14,
+        "number": 19,
         "title": "Remove Nth Node From End of List",
         "difficulty": "Medium",
         "description": (
@@ -291,7 +319,7 @@ PROBLEMS = {
         "solution_file": "remove_nth_node.py",
     },
     "valid-parentheses": {
-        "number": 15,
+        "number": 20,
         "title": "Valid Parentheses",
         "difficulty": "Easy",
         "description": (
@@ -311,8 +339,8 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "valid_parentheses.py",
     },
-        "merge-two-sorted-lists": {
-        "number": 16,
+    "merge-two-sorted-lists": {
+        "number": 21,
         "title": "Merge Two Sorted Lists",
         "difficulty": "Easy",
         "description": (
