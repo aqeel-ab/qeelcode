@@ -31,27 +31,19 @@ More algorithms and learning features will be added as the project develops.
 
 ---
 
-## 🧩 Algorithms
+## 🧩 Algorithm Progress
 
-### Completed Algorithms
+QeelCode follows the LeetCode problem sequence, with solutions implemented in Python and tested using Pytest.
 
-| # | Problem | Difficulty | Status |
-|---|---|---|---|
-| 1 | Two Sum | Easy | Completed |
-| 2 | Add Two Numbers | Medium | Completed |
-| 3 | Longest Substring Without Repeating Characters | Medium | Completed |
-| 4 | Median of Two Sorted Arrays | Hard | Completed |
-| 5 | Longest Palindromic Substring | Medium | Completed |
-| 6 | Zigzag Conversion | Medium | Completed |
-| 7 | Reverse Integer | Medium | Completed |
-| 8 | String to Integer (atoi) | Medium | Completed |
-| 9 | Palindrome Number | Easy | Completed |
-| 10 | Regular Expression Matching | Hard | Completed |
+**Current Progress:**
+- **25 / 100** algorithms completed
+- Problems 1–25 completed
+- Problem 26 onwards in progress
 
-### Upcoming Milestones
+### Progress Milestones
 
 - [x] Algorithms 1–10
-- [ ] Algorithms 11–20
+- [x] Algorithms 11–20
 - [ ] Algorithms 21–30
 - [ ] Algorithms 31–40
 - [ ] Algorithms 41–50
@@ -61,7 +53,8 @@ More algorithms and learning features will be added as the project develops.
 - [ ] Algorithms 81–90
 - [ ] Algorithms 91–100
 
-**Target completion date:** 30 November 2026
+
+**Target completion date:** 31 Nov 2026
 
 ---
 
