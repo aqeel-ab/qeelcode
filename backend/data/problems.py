@@ -435,4 +435,17 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "swap_nodes_in_pairs.py",
     },
+    "reverse-nodes-in-k-group": {
+        "number": 25,
+        "title": "Reverse Nodes in k-Group",
+        "difficulty": "Hard",
+        "description": "Reverse nodes in a linked list k at a time. Leave remaining nodes unchanged if fewer than k nodes remain.",
+        "approach": "Iteratively check for complete groups of k nodes, reverse their pointers, and reconnect each group.",
+        "patterns": ["Linked List", "Recursion"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "reverse_nodes_in_k_group.py",
+    },
 }
