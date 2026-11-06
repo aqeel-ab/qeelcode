@@ -102,7 +102,7 @@ PROBLEMS = {
         "total_tests": 7,
         "solution_file": "longest_palindromic_substring.py",
     },
-        "zigzag-conversion": {
+    "zigzag-conversion": {
         "number": 6,
         "title": "Zigzag Conversion",
         "difficulty": "Medium",
@@ -210,5 +210,242 @@ PROBLEMS = {
         "total_tests": 12,
         "solution_file": "regular_expression_matching.py",
     },
-
+    "container-with-most-water": {
+        "number": 11,
+        "title": "Container With Most Water",
+        "difficulty": "Medium",
+        "description": (
+            "Given an array of heights, find two lines that together "
+            "with the x-axis form a container that holds the most water."
+        ),
+        "approach": (
+            "Use two pointers starting at both ends of the array. "
+            "Calculate the area formed by the lines at these pointers, "
+            "then move the pointer pointing to the shorter line inward. "
+            "Repeat until the pointers meet."
+        ),
+        "patterns": ["Array", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "container_with_most_water.py",
+    },
+    "integer-to-roman": {
+        "number": 12,
+        "title": "Integer to Roman",
+        "difficulty": "Medium",
+        "description": "Convert an integer to its Roman numeral representation.",
+        "approach": "Greedy: repeatedly use the largest Roman numeral value that fits.",
+        "patterns": ["Math", "Greedy"],
+        "time_complexity": "O(1)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "integer_to_roman.py",
+    },
+    "roman-to-integer": {
+        "number": 13,
+        "title": "Roman to Integer",
+        "difficulty": "Easy",
+        "description": "Convert a Roman numeral string to an integer.",
+        "approach": "Scan the symbols; subtract a value when it is smaller than the next symbol, otherwise add it.",
+        "patterns": ["Hash Map", "Math"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "roman_to_integer.py",
+    },
+    "longest-common-prefix": {
+        "number": 14,
+        "title": "Longest Common Prefix",
+        "difficulty": "Easy",
+        "description": "Find the longest common prefix shared by all strings.",
+        "approach": "Start with the first string and shorten the prefix until every string starts with it.",
+        "patterns": ["String", "Trie"],
+        "time_complexity": "O(S)",  # S is the total number of characters checked
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "longest_common_prefix.py",
+    },
+    "3sum": {
+        "number": 15,
+        "title": "3Sum",
+        "difficulty": "Medium",
+        "description": (
+            "Given an integer array, return all unique triplets "
+            "whose values sum to zero."
+        ),
+        "approach": (
+            "Sort the array, then fix one value and use two pointers "
+            "to find pairs that complete a sum of zero. Skip duplicate "
+            "values to avoid returning duplicate triplets."
+        ),
+        "patterns": ["Array", "Sorting", "Two Pointers"],
+        "time_complexity": "O(n^2)",
+        "space_complexity": "O(1) auxiliary space, excluding the output",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "three_sum.py",
+    },
+    "3sum-closest": {
+        "number": 16,
+        "title": "3Sum Closest",
+        "difficulty": "Medium",
+        "description": "Find three integers whose sum is closest to the target.",
+        "approach": "Sort the array, then use two pointers for each fixed number.",
+        "patterns": ["Array", "Two Pointers", "Sorting"],
+        "time_complexity": "O(n²)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "three_sum_closest.py",
+    },
+    "letter-combinations": {
+        "number": 17,
+        "title": "Letter Combinations of a Phone Number",
+        "difficulty": "Medium",
+        "description": (
+            "Given a string containing digits from 2 to 9, return "
+            "all possible letter combinations that the digits could represent."
+        ),
+        "approach": (
+            "Build combinations one digit at a time. For each existing "
+            "combination, append every letter mapped to the current digit."
+        ),
+        "patterns": ["String", "Backtracking", "Combinations"],
+        "time_complexity": "O(3^n * 4^m), where n digits map to 3 letters and m digits map to 4",
+        "space_complexity": "O(3^n * 4^m)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "letter_combinations.py",
+    },
+    "4sum": {
+        "number": 18,
+        "title": "4Sum",
+        "difficulty": "Medium",
+        "description": "Find all unique quadruplets in the array that sum to the target.",
+        "approach": "Sort the array, fix two values, then use two pointers to find the remaining pair while skipping duplicates.",
+        "patterns": ["Array", "Two Pointers", "Sorting"],
+        "time_complexity": "O(n³)",
+        "space_complexity": "O(1) auxiliary, excluding the result",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "four_sum.py",
+    },
+    "remove-nth-node-from-end": {
+        "number": 19,
+        "title": "Remove Nth Node From End of List",
+        "difficulty": "Medium",
+        "description": (
+            "Given the head of a linked list, remove the nth node "
+            "from the end of the list and return its head."
+        ),
+        "approach": (
+            "Use a dummy node and two pointers. Move the fast pointer "
+            "n + 1 steps ahead, then move both pointers until fast "
+            "reaches the end. Remove the target node after slow."
+        ),
+        "patterns": ["Linked List", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "remove_nth_node.py",
+    },
+    "valid-parentheses": {
+        "number": 20,
+        "title": "Valid Parentheses",
+        "difficulty": "Easy",
+        "description": (
+            "Given a string containing brackets, determine whether "
+            "the brackets are properly opened, closed, and nested."
+        ),
+        "approach": (
+            "Use a stack to track opening brackets. For each closing "
+            "bracket, check that the stack's top contains its matching "
+            "opening bracket. The string is valid if no mismatch occurs "
+            "and the stack is empty at the end."
+        ),
+        "patterns": ["String", "Stack"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(n)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "valid_parentheses.py",
+    },
+    "merge-two-sorted-lists": {
+        "number": 21,
+        "title": "Merge Two Sorted Lists",
+        "difficulty": "Easy",
+        "description": (
+            "Given the heads of two sorted linked lists, merge them "
+            "into one sorted linked list and return its head."
+        ),
+        "approach": (
+            "Use a dummy node and a current pointer. Compare the nodes "
+            "at the heads of both lists, attach the smaller one, and "
+            "advance that list. Finally, attach any remaining nodes."
+        ),
+        "patterns": ["Linked List", "Two Pointers"],
+        "time_complexity": "O(n + m)",
+        "space_complexity": "O(1)",
+        "tests_passed": 4,
+        "total_tests": 4,
+        "solution_file": "merge_two_sorted_lists.py",
+    },
+    "generate-parentheses": {
+        "number": 22,
+        "title": "Generate Parentheses",
+        "difficulty": "Medium",
+        "description": "Generate all combinations of well-formed parentheses for n pairs.",
+        "approach": "Use backtracking to build valid combinations by tracking the number of opening and closing parentheses.",
+        "patterns": ["String", "Dynamic Programming", "Backtracking"],
+        "time_complexity": "O(4^n / √n)",
+        "space_complexity": "O(4^n / √n)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "generate_parentheses.py",
+    },
+    "merge-k-sorted-lists": {
+        "number": 23,
+        "title": "Merge k Sorted Lists",
+        "difficulty": "Hard",
+        "description": "Merge k sorted linked lists into one sorted linked list.",
+        "approach": "Use a min heap to repeatedly extract the smallest node and merge it into the result.",
+        "patterns": ["Linked List", "Heap", "Divide and Conquer"],
+        "time_complexity": "O(N log k)",
+        "space_complexity": "O(k)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "merge_k_sorted_lists.py",
+    },
+    "swap-nodes-in-pairs": {
+        "number": 24,
+        "title": "Swap Nodes in Pairs",
+        "difficulty": "Medium",
+        "description": "Swap every two adjacent nodes in a linked list and return its head.",
+        "approach": "Use a dummy node and iteratively rearrange pointers to swap adjacent nodes.",
+        "patterns": ["Linked List", "Recursion"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "swap_nodes_in_pairs.py",
+    },
+    "reverse-nodes-in-k-group": {
+        "number": 25,
+        "title": "Reverse Nodes in k-Group",
+        "difficulty": "Hard",
+        "description": "Reverse nodes in a linked list k at a time. Leave remaining nodes unchanged if fewer than k nodes remain.",
+        "approach": "Iteratively check for complete groups of k nodes, reverse their pointers, and reconnect each group.",
+        "patterns": ["Linked List", "Recursion"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "reverse_nodes_in_k_group.py",
+    },
 }
