@@ -396,4 +396,17 @@ PROBLEMS = {
         "total_tests": 4,
         "solution_file": "merge_two_sorted_lists.py",
     },
+    "generate-parentheses": {
+        "number": 22,
+        "title": "Generate Parentheses",
+        "difficulty": "Medium",
+        "description": "Generate all combinations of well-formed parentheses for n pairs.",
+        "approach": "Use backtracking to build valid combinations by tracking the number of opening and closing parentheses.",
+        "patterns": ["String", "Dynamic Programming", "Backtracking"],
+        "time_complexity": "O(4^n / √n)",
+        "space_complexity": "O(4^n / √n)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "generate_parentheses.py",
+    },
 }
