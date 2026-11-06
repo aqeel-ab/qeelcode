@@ -422,4 +422,17 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "merge_k_sorted_lists.py",
     },
+    "swap-nodes-in-pairs": {
+        "number": 24,
+        "title": "Swap Nodes in Pairs",
+        "difficulty": "Medium",
+        "description": "Swap every two adjacent nodes in a linked list and return its head.",
+        "approach": "Use a dummy node and iteratively rearrange pointers to swap adjacent nodes.",
+        "patterns": ["Linked List", "Recursion"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "swap_nodes_in_pairs.py",
+    },
 }
