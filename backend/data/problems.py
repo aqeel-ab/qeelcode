@@ -409,4 +409,17 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "generate_parentheses.py",
     },
+    "merge-k-sorted-lists": {
+        "number": 23,
+        "title": "Merge k Sorted Lists",
+        "difficulty": "Hard",
+        "description": "Merge k sorted linked lists into one sorted linked list.",
+        "approach": "Use a min heap to repeatedly extract the smallest node and merge it into the result.",
+        "patterns": ["Linked List", "Heap", "Divide and Conquer"],
+        "time_complexity": "O(N log k)",
+        "space_complexity": "O(k)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "merge_k_sorted_lists.py",
+    },
 }
