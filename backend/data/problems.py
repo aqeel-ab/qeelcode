@@ -474,4 +474,17 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "remove_element.py",
     },
+    "find-the-index-of-the-first-occurrence-in-a-string": {
+        "number": 28,
+        "title": "Find the Index of the First Occurrence in a String",
+        "difficulty": "Easy",
+        "description": "Return the index of the first occurrence of a needle string in a haystack string, or -1 if it is not found.",
+        "approach": "Use a sliding window of the needle's length to compare each substring in the haystack with the needle.",
+        "patterns": ["String", "String Matching", "Sliding Window"],
+        "time_complexity": "O((n-m+1) * m)",
+        "space_complexity": "O(m)",
+        "tests_passed": 6,
+        "total_tests": 6,
+        "solution_file": "find_the_index_of_the_first_occurrence.py",
+    },
 }
