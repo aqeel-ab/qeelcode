@@ -448,4 +448,17 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "reverse_nodes_in_k_group.py",
     },
+    "remove-duplicates-from-sorted-array": {
+        "number": 26,
+        "title": "Remove Duplicates from Sorted Array",
+        "difficulty": "Easy",
+        "description": "Remove duplicates from a sorted array in-place so each unique element appears only once, and return the number of unique elements.",
+        "approach": "Use two pointers: scan the array and overwrite the next position whenever a new unique value is found.",
+        "patterns": ["Array", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "remove_duplicates_sorted_array.py",
+    },
 }
