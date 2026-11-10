@@ -487,4 +487,17 @@ PROBLEMS = {
         "total_tests": 6,
         "solution_file": "find_the_index_of_the_first_occurrence.py",
     },
+    "divide-two-integers": {
+        "number": 29,
+        "title": "Divide Two Integers",
+        "difficulty": "Medium",
+        "description": "Divide two integers without using multiplication, division, or modulo operators. Return the quotient truncated toward zero and handle 32-bit integer overflow.",
+        "approach": "Use bit manipulation and repeated doubling with left shifts to subtract the largest possible multiples of the divisor from the dividend.",
+        "patterns": ["Math", "Bit Manipulation"],
+        "time_complexity": "O(log² n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 8,
+        "total_tests": 8,
+        "solution_file": "divide_two_integers.py",
+    },
 }
