@@ -500,4 +500,17 @@ PROBLEMS = {
         "total_tests": 8,
         "solution_file": "divide_two_integers.py",
     },
+    "substring-with-concatenation-of-all-words": {
+        "number": 30,
+        "title": "Substring with Concatenation of All Words",
+        "difficulty": "Hard",
+        "description": "Find all starting indices of substrings formed by concatenating every word in the given words array exactly once, in any order.",
+        "approach": "Use a sliding window with word-frequency counters. Iterate through different word-length offsets and adjust the window when word frequencies exceed the expected counts.",
+        "patterns": ["Hash Table", "String", "Sliding Window"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(m)",
+        "tests_passed": 8,
+        "total_tests": 8,
+        "solution_file": "substring_with_concatenation_of_all_words.py",
+    },
 }
