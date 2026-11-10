@@ -461,4 +461,17 @@ PROBLEMS = {
         "total_tests": 5,
         "solution_file": "remove_duplicates_sorted_array.py",
     },
+    "remove-element": {
+        "number": 27,
+        "title": "Remove Element",
+        "difficulty": "Easy",
+        "description": "Remove all occurrences of a given value from an array in-place and return the number of remaining elements.",
+        "approach": "Use a two-pointer technique to overwrite elements that are not equal to the target value.",
+        "patterns": ["Array", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 5,
+        "total_tests": 5,
+        "solution_file": "remove_element.py",
+    },
 }
