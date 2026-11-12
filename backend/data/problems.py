@@ -526,4 +526,17 @@ PROBLEMS = {
         "total_tests": 7,
         "solution_file": "next_permutation.py",
     },
+    "longest-valid-parentheses": {
+        "number": 32,
+        "title": "Longest Valid Parentheses",
+        "difficulty": "Hard",
+        "description": "Find the length of the longest valid (well-formed) parentheses substring in a string containing only '(' and ')'.",
+        "approach": "Use a stack to track unmatched parentheses indices. Maintain a boundary index to calculate the length of valid substrings.",
+        "patterns": ["String", "Dynamic Programming", "Stack"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(n)",
+        "tests_passed": 8,
+        "total_tests": 8,
+        "solution_file": "longest_valid_parentheses.py",
+    },
 }
