@@ -513,4 +513,17 @@ PROBLEMS = {
         "total_tests": 8,
         "solution_file": "substring_with_concatenation_of_all_words.py",
     },
+    "next-permutation": {
+        "number": 31,
+        "title": "Next Permutation",
+        "difficulty": "Medium",
+        "description": "Rearrange an array into its next lexicographically greater permutation in-place. If no greater permutation exists, rearrange it into ascending order.",
+        "approach": "Find the first decreasing element from the right, swap it with the next greater element, then reverse the suffix.",
+        "patterns": ["Array", "Two Pointers"],
+        "time_complexity": "O(n)",
+        "space_complexity": "O(1)",
+        "tests_passed": 7,
+        "total_tests": 7,
+        "solution_file": "next_permutation.py",
+    },
 }
